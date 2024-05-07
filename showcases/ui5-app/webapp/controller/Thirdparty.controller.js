@@ -18,8 +18,9 @@ sap.ui.define(
 		"xml-js",
 		"firebase/app", // requires node-fetch@2
 		"firebase/firestore/lite",
+		//"@adobe/pdfservices-node-sdk",
 	],
-	(Controller, MessageToast, xlsx, cmis, supabase, octokit, axios, temporal, stompjs, react, reactdom, zod, pdfMake, pdfFonts, xmljs, firebase, firestore) => {
+	(Controller, MessageToast, xlsx, cmis, supabase, octokit, axios, temporal, stompjs, react, reactdom, zod, pdfMake, pdfFonts, xmljs, firebase, firestore, pdfservices) => {
 		"use strict";
 
 		console.log(xlsx);
@@ -33,6 +34,7 @@ sap.ui.define(
 		console.log(reactdom);
 		console.log(zod);
 		console.log(xmljs);
+		console.log(pdfservices);
 
 		pdfMake.vfs = pdfFonts.pdfMake.vfs;
 		console.log(pdfMake);

@@ -9,6 +9,8 @@
   xmlns:html="http://www.w3.org/1999/xhtml"
   xmlns:webc="ui5.ecosystem.demo.app.webc"
   webc:import="@ui5/webcomponents/dist"
+  xmlns:lc="ui5.ecosystem.demo.app.lc"
+  lc:import="@luigi-project/container"
   core:require="{
     Integer: 'sap/ui/model/type/Integer',
     iconActivities: '@ui5/webcomponents-icons/dist/activities'
@@ -59,6 +61,8 @@
           <webc:RangeSlider />
           <webc:CheckBox text="Checked" />
           <webc:Switch />
+          <webc:SplitButton text="Split Button" />
+          <lc:LuigiContainer />
         </VBox>
       </webc:Panel>
     </content>
